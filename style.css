@@ -12,11 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ecf0f3;
+    background-color: rgb(32, 33, 36);
 }
 
 .container .calc {
-    box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, .16);
+    box-shadow: 0 0 5px 3px rgb(124, 124, 124);
     border-radius: 28px;
     padding: 16px;
     display: grid;
@@ -49,9 +49,17 @@
     font-size: 20px;
 }
 
+.container .calc button:focus {
+    box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgba(0, 0, 0, .16);
+}
+
 .container .calc .equal {
     width: 120px;
     border-radius: 42px;
     box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, .16);
     background-color: #ecf0f3;
+}
+
+#inputtext::placeholder {
+    color: black;
 }
